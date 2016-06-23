@@ -137,13 +137,6 @@ void resetLEDs()
 {
   FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection(TypicalLEDStrip);
   FastLED.setBrightness(BRIGHTNESS);
-
-  /*
-    for(int i=0 ; i<NUM_LEDS; i++)
-    {
-    leds[i] = CRGB( 0, 0, 0);
-    }
-  */
 }
 
 void loop() {
